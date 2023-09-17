@@ -1,0 +1,206 @@
+/*
+Color pallete:
+#FFCC70
+#fffadd
+#8ECDDD
+#22668D
+
+Fonts:
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Noto Serif JP', serif;
+*/
+* {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+
+  color: #fffadd;
+  z-index: 5;
+}
+body {
+  background-color: #8ecddd;
+}
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+#hero,
+#resume,
+#projects,
+#skills-hobbies,
+#contact {
+  grid-column: 2/3;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  background-color: #22668d;
+}
+
+/* *********HERO*********** */
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-head {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.hero-subhead {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.hero-profile {
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.hero-background {
+  width: 74.9%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media (max-width: 1120px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hero-profile {
+    height: 300px;
+  }
+}
+
+/* **********RESUME*************** */
+
+.resume-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.resume-div-head {
+  align-self: flex-start;
+  margin-top: 15%;
+  padding-top: 1%;
+  border-top: 3px solid #fffadd;
+}
+
+.resume-head {
+  font-size: 3rem;
+}
+
+.resume-div-text {
+  border-bottom: 3px solid #fffadd;
+  margin-bottom: 15%;
+}
+
+.resume-text {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.sun {
+  position: absolute;
+  top: 100vh;
+  z-index: 0;
+  width: 300px;
+  object-fit: cover;
+}
+
+/* **********PROJECTS****************/
+
+.project-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hotel-description {
+  grid-area: 1/2/2/3;
+  align-self: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.tindog-description {
+  grid-area: 2/1/3/2;
+  align-self: center;
+  padding: 20%;
+}
+
+.description-head {
+  font-weight: 600;
+}
+
+.description-text {
+  font-size: 1.3rem;
+}
+
+.project-img {
+  height: 50vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* **********SKILLS*************** */
+
+.skills-hobbies-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-hobbies-text {
+  color: #ffcc70;
+}
+
+/* **********CONTACT*************** */
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.contact-head {
+  font-size: 5rem;
+}
+
+/* **********FOOTER*************** */
+#footer {
+  grid-column: 2/3;
+  border-top: 3px solid black;
+}
