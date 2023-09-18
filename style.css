@@ -1,0 +1,89 @@
+h2,
+p {
+  font-family: "Noto Sans Linear B", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+#hero {
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffffff,
+    #005aa7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffffff,
+    #005aa7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#about {
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #005aa7,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #005aa7,
+    #ffffff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#hero,
+#about {
+  font-family: "Libre Baskerville", serif;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.img-profile,
+.img-about {
+  border-radius: 12px;
+  box-shadow: 10px 5px 15px #000000;
+}
+
+.project-heading {
+  font-weight: 800;
+}
+
+.img-project {
+  object-fit: cover;
+}
+
+.project-a {
+  font-weight: 600;
+}
+
+.contact {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.heavy-p {
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.medium-p {
+  font-style: italic;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
